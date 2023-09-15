@@ -1,0 +1,258 @@
+body {
+    /* background-color: #c6d7de; */
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 3em;
+    padding: 0;
+}
+
+.show1 {
+    color: black;
+}
+
+#v0 {
+    width: 80%;
+}
+
+/* img {
+    object-fit: contain;
+} */
+
+.v0 {
+    position: fixed;
+    z-index: 2;
+    color: white;
+    /* font-size: 5rem; */
+    /* width: 40%; */
+    right: 25%;
+    /* Adjust to horizontally center */
+    bottom: 50%;
+    /* Adjust to vertically center */
+    transform: translate(50%, 50%);
+    /* Center the element */
+}
+
+#set-height {
+    display: block;
+}
+
+section {
+    z-index: 1;
+    position: relative;
+}
+
+.content {
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    top: 33.3%;
+}
+
+h1 {
+    /* font-size: 3em; */
+    /* background: #fff; */
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.timeline {
+    color: dimgray;
+}
+
+.fill {
+    height: 100%;
+    width: 100%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.photo-profile {
+    object-fit: cover;
+}
+
+.list-photo {
+    object-fit: contain;
+
+}
+
+/* Default styles for larger screens */
+.fw-medium {
+    font-weight: 700 !important;
+}
+
+.width-60 {
+    width: 70%;
+}
+
+p {
+    font-size: smaller;
+}
+
+.modal-backdrop {
+    z-index: 1040;
+}
+
+
+.modal-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CSS for the image container */
+.image-container {
+    height: 50%;
+    /* Half the height of the parent div */
+    width: auto;
+    /* Allow the width to adjust to the image's natural width */
+    display: inline-block;
+    /* Display as inline-block to adjust to content size */
+    overflow: hidden;
+    /* Hide overflow if the image is larger than the container */
+}
+
+/* Style the image to fit within its container */
+a {
+    text-decoration: none;
+}
+.indogo{
+     
+    color: #48357B;
+}
+
+@media (min-width: 768px) {
+
+    /* On desktop (medium and larger screens) */
+    .video-container {
+        display: flex;
+        flex-direction: row;
+        /* Video on the right */
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* On mobile (smaller screens) */
+    .video-container {
+        display: flex;
+        flex-direction: column-reverse;
+        /* Video on top */
+    }
+
+    body {
+        color: white;
+        /* background-color: #c6d7de; */
+        font-family: "Lucida Console", "Courier New", monospace;
+        padding: 3em;
+        padding: 0;
+        background-color: #000;
+    }
+
+    .timeline {
+        color: whitesmoke;
+    }
+    .indogo{
+     
+        color: #C7B2FF;
+    }
+    .modal {
+        color: #000;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0);
+        /* Adjust the last value (0.5) for transparency */
+        border: 2px solid white;
+        /* Set the border color to white */
+        color: white;
+    }
+
+    .show1 {
+        color: white;
+        padding: 12px;
+    }
+
+    /* .container-left {
+        position: relative;  Change position to relative to stack normally 
+        z-index: auto;  Reset the z-index 
+    } */
+    .container-left {
+        z-index: 2;
+        /* Bring container-left to the front */
+        position: absolute;
+        padding: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+
+    }
+
+    .container-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        /* Set a background color for the video container */
+        overflow: hidden;
+        /* Crop the video */
+    }
+
+    .fs-2 {
+        font-size: x-large !important;
+    }
+
+    .fs-4 {
+        font-size: small !important;
+
+    }
+
+    .fs-5 {
+        font-size: smaller !important;
+    }
+
+    .transparent-card {
+        color: white;
+        border: 2px solid white;
+        background-color: rgba(255, 255, 255, 0);
+        /* Adjust the last value (0.5) for transparency */
+    }
+
+    #v0 {
+
+        width: 2250%;
+        height: 100vh;
+        /* Full height of the viewport */
+    }
+
+    .width-60 {
+        width: 90%;
+    }
+
+    .width-50 {
+        width: 60%;
+    }
+
+    .width-80 {
+        width: 90%;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .margintop-list {
+        margin-top: 0px !important;
+    }
+
+    .filter-green {
+        filter: invert(41%) sepia(50%) saturate(519%) hue-rotate(216deg) brightness(82%) contrast(85%);}
+}
