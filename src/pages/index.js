@@ -1,7 +1,10 @@
 import Script from "next/script"
+import PageLoader from "../../components/PageLoader"
+
 export default function Home() {
   return (
 <>
+<PageLoader />
   <meta charSet="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
@@ -13,6 +16,8 @@ export default function Home() {
     crossOrigin="anonymous"
   />
   <link rel="stylesheet" href="main.css" />
+  <div id="preloader"></div>
+
   <div
     style={{ width: "100%", height: "100vh" }}
     className="show d-flex flex-column flex-wrap justify-content-center align-items-center width-50"
